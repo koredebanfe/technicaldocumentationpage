@@ -1,0 +1,111 @@
+* :not(ul){
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* {
+    font-family: sans-serif;
+}
+
+nav {
+    text-decoration: none;
+    height: 50vh;
+    margin-left: -3em;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(58, 55, 55);
+    margin-left: 2em;
+}
+
+
+nav li {
+    padding: .6em;
+    color: grey;
+    list-style-type: none;
+    border-top: 1px solid grey;
+}
+
+nav header {
+    font-size: 2.8rem;
+    margin: .2em 2em;
+}
+
+.container main {
+    margin: 1em 3em;
+    color: rgb(58, 55, 55);
+}
+
+main header{
+    font-size: 2.5em;
+    line-height: 1em;
+    color: black;
+}
+
+main {
+    line-height: 1.5em;
+    
+}
+
+main header, p {
+    margin: 1rem 0;
+}
+
+.code{
+    word-break: break-all;
+    background-color: rgb(238, 235, 235);
+    padding: 1.2em;
+    margin: 1em 0;
+    border-radius: 5px;
+}
+
+#Reference a {
+    color: blue;
+}
+
+@media screen and (min-width: 800px) {
+    nav {
+        list-style-type: none;
+        text-decoration: none;
+        width: 35vw;
+        height: 100vh;
+        overflow: hidden ;
+        position: fixed;
+        border-right: 1px solid grey;
+    }
+
+    main {
+        position: absolute;
+       left: 30vw;
+    }
+
+    nav header {
+        font-size: 2em;
+        margin: .2em 2em;
+    }
+}
+
+@media screen and (max-width: 799px){
+    nav ul {
+        position: absolute;
+        width: 100vw;
+        height: 40%;
+        overflow-y: scroll;
+        top: 3em;
+    }
+    
+    ul:last-child {
+        border-bottom: 2px solid grey;
+    }
+    
+    nav header {
+        font-size: 2.5rem;
+        position: absolute;
+        margin: .2em 2em;
+        height: 15%;
+        top: 0;
+    }
+    
+}
